@@ -6,7 +6,7 @@ Thumb Print Matching
   <img src="/assets/Image%208-5-25%20at%202.43%E2%80%AFPM.JPG" width="240" />
   <img src="/assets/Image%208-5-25%20at%202.44%E2%80%AFPM.JPG" width="240" />
   <br/>
-  <em>Thumbprints Labeled by Mnutiae from Left to Right: </em>
+  <em>Thumbprints Labeled by Minutiae from Left to Right: (Whorls, Loops, and Deltas), (Ridge Orientation), and (Terminations and Bifurcations)</em>
 </p>
 
 
