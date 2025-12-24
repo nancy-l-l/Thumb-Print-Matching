@@ -28,6 +28,11 @@ I propose a new strategy, keeping the same graph structure discussed by A. Liu e
 
 Redefining the input print as a graph allows us to neglect the reorientation concern. Instead of using a graph neural network to classify the image, we should consider the Weisfeiler-Leman (WL) algorithm to determine if two graphs (input print and true print) are isomorphic [5]. Additionally, the Weisfeiler-Leman procedure refines node labels based on neighboring nodes' labels, which allows use to consider feature's relationships globally and locally [5]. Related work also generalizes Weisfeiler–Lehman kernels to subgraph settings, allowing us to authenticate even if only a partial print is captured[6]. This proposed strategy allows us to consider many different feature types when determining authenticity, including ridge orientations, loops, whorls, deltas, bifurcations, and terminations [2], [5].
 
+<p align="center">
+  <img src=/assets/Image%208-19-25%20at%2012.49%E2%80%AFPM.JPG width="240" />
+  <br/>
+  <em>Probability Distribution of the Isomorphic scores for true pairs (blue) and false pairs (red).</em>
+</p>
 Having implemented the algorithm, I ran a series of tests to determine its accuracy. When given two graphs, the algorithm will return the probability that the two graphs are truly isomorphic (the print belongs to the owner). I iterated over a dataset of prints. I cleaned, extracted features, and developed graphs for image [2]. I simulated user input by reconstructing the graph for a rotated version of the image. I then passed to the Weisfeiler-Leman algorithm every possible pair that can be composed from the dataset [5]. Rotation was determined randomly. Across a dataset of 320, therefore {320 choose 2} pairs. I achieved an AUROC score of .93, demonstrating the algorithm's robust interclass discrimination (ability to rate true pairs higher than false pairs 93% of the time). I found that there was no correlation between the degree of rotation and classification accuracy. Thereby proving that the algorithm is not susceptible to user orientation input and has a high authentication accuracy.
 
 
