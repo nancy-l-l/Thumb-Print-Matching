@@ -29,7 +29,7 @@ I propose a new strategy, keeping the same graph structure discussed by A. Liu e
 Redefining the input print as a graph allows us to neglect the reorientation concern. Instead of using a graph neural network to classify the image, we should consider the Weisfeiler-Leman (WL) algorithm to determine if two graphs (input print and true print) are isomorphic [5]. Additionally, the Weisfeiler-Leman procedure refines node labels based on neighboring nodes' labels, which allows use to consider feature's relationships globally and locally [5]. Related work also generalizes Weisfeiler–Lehman kernels to subgraph settings, allowing us to authenticate even if only a partial print is captured[6]. This proposed strategy allows us to consider many different feature types when determining authenticity, including ridge orientations, loops, whorls, deltas, bifurcations, and terminations [2], [5].
 
 <p align="center">
-  <img src=/assets/Image%208-19-25%20at%2012.49%E2%80%AFPM.JPG width="420" />
+  <img src=/assets/Image%208-19-25%20at%2012.49%E2%80%AFPM.JPG width="520" />
   <br/>
   <em>Probability Distribution of the Isomorphic scores for true pairs (blue) and false pairs (red).</em>
 </p>
