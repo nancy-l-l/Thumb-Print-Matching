@@ -1,14 +1,14 @@
 # Thumb-Print-Matching
 Thumb Print Matching
 
-<p>
-  <a href="assets/Image%208-13-25%20at%2010.26%20AM.JPG">
-    <img src="assets/Image%208-13-25%20at%2010.26%20AM.JPG" width="320" />
-  </a>
-  <a href="assets/Image%208-19-25%20at%2012.49%20PM.JPG">
-    <img src="assets/Image%208-19-25%20at%2012.49%20PM.JPG" width="320" />
-  </a>
+<p align="center">
+  <img src="/assets/Image%208-5-25%20at%202.40%E2%80%AFPM.JPG" width="240" />
+  <img src="/assets/Image%208-5-25%20at%202.43%E2%80%AFPM.JPG" width="240" />
+  <img src="/assets/Image%208-5-25%20at%202.44%E2%80%AFPM.JPG" width="240" />
+  <br/>
+  <em>Thumbprints Labeled by Mnutiae from Left to Right: </em>
 </p>
+
 
 Current fingerprint matching strategy:
 When first given a print, we have to clean the image of spurious noise. After the image is cleaned, we need to classify unique features that will help us identify the fingerprint owner.
